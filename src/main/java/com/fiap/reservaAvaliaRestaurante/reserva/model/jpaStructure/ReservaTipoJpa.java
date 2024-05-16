@@ -14,9 +14,9 @@ public class ReservaTipoJpa {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "idReservaTipo")
-	Integer idReservaTipo;
+	public Integer idReservaTipo;
 
 	@Column(name = "reservaTipo")
-	String reservaTipo;
+	public String reservaTipo;
 
 }

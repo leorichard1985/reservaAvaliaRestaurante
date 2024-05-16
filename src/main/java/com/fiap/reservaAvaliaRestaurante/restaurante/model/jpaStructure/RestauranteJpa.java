@@ -6,7 +6,15 @@ import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
 import jakarta.persistence.Id;
 import jakarta.persistence.Table;
+import lombok.AllArgsConstructor;
+import lombok.Getter;
+import lombok.NoArgsConstructor;
+import lombok.Setter;
 
+@Getter
+@Setter
+@NoArgsConstructor
+@AllArgsConstructor
 @Entity
 @Table(name = "tb_Cad_Restaurante")
 public class RestauranteJpa {
@@ -14,33 +22,33 @@ public class RestauranteJpa {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "idRestaurante")
-	Integer idRestaurante;
+	public Integer idRestaurante;
 
 	@Column(name = "nomeRestaurante")
-	String nomeRestaurante;
+	public String nomeRestaurante;
 
 	@Column(name = "enderecoRestaurante")
-	String enderecoRestaurante;
+	public String enderecoRestaurante;
 
 	@Column(name = "cepRestaurante")
-	String cepRestaurante;
+	public String cepRestaurante;
 
 	@Column(name = "cidadeRestaurante")
-	String cidadeRestaurante;
+	public String cidadeRestaurante;
 
 	@Column(name = "estadoRestaurante")
-	String estadoRestaurante;
+	public String estadoRestaurante;
 
 	@Column(name = "tipoCozinha")
-	String tipoCozinha;
+	public String tipoCozinha;
 
 	@Column(name = "horarioFuncionamento")
-	String horarioFuncionamento;
+	public String horarioFuncionamento;
 
 	@Column(name = "capacidadeReservaTotal")
-	Integer capacidadeReservaTotal;
+	public Integer capacidadeReservaTotal;
 
 	@Column(name = "capacidadeReservaDisponivel")
-	Integer capacidadeReservaDisponivel;
+	public Integer capacidadeReservaDisponivel;
 
 }

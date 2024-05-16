@@ -14,9 +14,9 @@ public class UsuarioTipoJpa {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "idUsuarioTipo")
-	Integer idUsuarioTipo;
+	public Integer idUsuarioTipo;
 
 	@Column(name = "usuarioTipo")
-	String usuarioTipo;
+	public String usuarioTipo;
 
 }

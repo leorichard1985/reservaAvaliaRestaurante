@@ -18,16 +18,16 @@ public class UsuarioJpa {
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
 	@Column(name = "idUsuario")
-	Integer idUsuario;
+	public Integer idUsuario;
 
 	@OneToOne(fetch = FetchType.EAGER, cascade = CascadeType.REFRESH)
 	@JoinColumn(name = "idUsuarioTipo")
-	UsuarioTipoJpa idUsuarioTipo;
+	public UsuarioTipoJpa idUsuarioTipo;
 
 	@Column(name = "nomeUsuario")
-	String nomeUsuario;
+	public String nomeUsuario;
 
 	@Column(name = "cpfUsuario")
-	String cpfUsuario;
+	public String cpfUsuario;
 
 }
