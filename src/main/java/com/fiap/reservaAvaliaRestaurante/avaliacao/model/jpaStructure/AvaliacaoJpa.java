@@ -25,9 +25,8 @@ import lombok.Setter;
 @AllArgsConstructor
 @Entity
 @Table(name = "tb_CAD_Avaliacao")
-public class AvaliacaoJpa implements Serializable {
+public class AvaliacaoJpa {
 
-	private static final Long serialVersionUID = 730210547235292769L;
 
 	@Id
 	@GeneratedValue(strategy = GenerationType.IDENTITY)
