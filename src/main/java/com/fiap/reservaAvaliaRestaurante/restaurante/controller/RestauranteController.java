@@ -31,12 +31,12 @@ public class RestauranteController {
 
 	@GetMapping
 	public CompletableFuture<ResponseEntity<Object>> BuscarRestaurantePorFiltro(
-			@RequestParam(value = "nomeRestaurante", required = false) String nomeRestaurante,
-			@RequestParam(value = "enderecoRestaurante", required = false) String enderecoRestaurante,
-			@RequestParam(value = "cepRestaurante", required = false) String cepRestaurante,
-			@RequestParam(value = "cidadeRestaurante", required = false) String cidadeRestaurante,
-			@RequestParam(value = "estadoRestaurante", required = false) String estadoRestaurante,
-			@RequestParam(value = "tipoCozinha", required = false) String tipoCozinha) {
+			@RequestParam(value = "nomeRestaurante", required = true) String nomeRestaurante,
+			@RequestParam(value = "enderecoRestaurante", required = true) String enderecoRestaurante,
+			@RequestParam(value = "cepRestaurante", required = true) String cepRestaurante,
+			@RequestParam(value = "cidadeRestaurante", required = true) String cidadeRestaurante,
+			@RequestParam(value = "estadoRestaurante", required = true) String estadoRestaurante,
+			@RequestParam(value = "tipoCozinha", required = true) String tipoCozinha) {
 
 		try {
 

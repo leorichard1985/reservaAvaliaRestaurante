@@ -33,8 +33,8 @@ public class AvaliacaoController {
 
 	@GetMapping
 	public CompletableFuture<ResponseEntity<Object>> BuscarAvaliacoesPorFiltro(
-			@RequestParam(value = "idRestaurante", required = false) Integer idRestaurante,
-			@RequestParam(value = "idUsuario", required = false) Integer idUsuario) {
+			@RequestParam(value = "idRestaurante", required = true) Integer idRestaurante,
+			@RequestParam(value = "idUsuario", required = true) Integer idUsuario) {
 
 		try {
 

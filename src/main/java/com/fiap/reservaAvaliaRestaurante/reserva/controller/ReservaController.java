@@ -33,8 +33,8 @@ public class ReservaController {
 
 	@GetMapping
 	public CompletableFuture<ResponseEntity<Object>> BuscarReservaPorFiltro(
-			@RequestParam(value = "idRestaurante", required = false) Integer idRestaurante,
-			@RequestParam(value = "idUsuario", required = false) Integer idUsuario) {
+			@RequestParam(value = "idRestaurante", required = true) Integer idRestaurante,
+			@RequestParam(value = "idUsuario", required = true) Integer idUsuario) {
 
 		try {
 

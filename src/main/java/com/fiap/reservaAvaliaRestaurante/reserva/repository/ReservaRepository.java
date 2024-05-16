@@ -12,7 +12,7 @@ import com.fiap.reservaAvaliaRestaurante.reserva.model.jpaStructure.ReservaJpa;
 @Repository
 public interface ReservaRepository extends JpaRepository<ReservaJpa, Integer> {
 	
-	@Query(value = "SELECT reserva FROM ReservaJpa reserva WHERE reserva.restaurante.idRestaurante = :idRestaurante AND reserva.usuario.idUsuario = :idUsuario")
+	@Query(value = "SELECT reserva FROM ReservaJpa reserva WHERE reserva.restaurante.idRestaurante = :idRestaurante OR reserva.usuario.idUsuario = :idUsuario")
 	public List<ReservaJpa> BuscarReservaPorFiltro(@Param(value = "idRestaurante") Integer idRestaurante, @Param(value = "idUsuario") Integer idUsuario);
 	
 

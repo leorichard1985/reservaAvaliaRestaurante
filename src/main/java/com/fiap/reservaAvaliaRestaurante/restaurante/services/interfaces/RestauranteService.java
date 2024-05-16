@@ -9,7 +9,7 @@ public interface RestauranteService {
 	List<Restaurante> BuscarRestaurantePorFiltro(String nomeRestaurante, String enderecoRestaurante,
 			String cepRestaurante, String cidadeRestaurante, String estadoRestaurante, String tipoCozinha);
 
-	Restaurante BuscarRestaurantePorId(Integer idAvaliacao);
+	Restaurante BuscarRestaurantePorId(Integer idRestaurante);
 
 	Restaurante CriarRestaurante(Restaurante objCriarRestaurante);
 
